@@ -17,7 +17,7 @@ install:
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then bash travis/osx.sh; fi
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then bash travis/linux.sh; fi
 
-  - pip install pep8
+  - sudo pip install pep8
 
   # Check everything was correctly installed
   - echo $PATH

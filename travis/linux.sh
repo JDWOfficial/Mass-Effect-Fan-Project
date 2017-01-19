@@ -3,7 +3,7 @@ set -ev
 # Install Python 3.5
 sudo add-apt-repository ppa:fkrull/deadsnakes -y
 sudo apt-get update -qq
-sudo apt-get install python3.5 python3.5-dev -y
+sudo apt-get install python3.5 -y
 # Install pip
 curl -O https://bootstrap.pypa.io/get-pip.py
 sudo python3.5 get-pip.py
