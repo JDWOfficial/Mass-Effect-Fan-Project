@@ -1,10 +1,10 @@
-#README
-#This file is copyrighted property of the TAA Year 10 YGD_Bafta Project for making.
-#This project is officially created by John O'Sullivan and Jack Downie-webb
-#Assistant creators joining after initial collaboration are Zander Brown and Destiny Abagonisaede
-#README
-import sys
-import time
+"""
+This file is copyrighted property of the TAA Year 10 YGD_Bafta Project for making.
+This project is officially created by John O'Sullivan and Jack Downie-webb
+Assistant creators joining after initial collaboration are Zander Brown and Destiny Abagonisaede
+"""
+
+import sys, time
 
 #begin program
 
