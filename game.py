@@ -85,5 +85,3 @@ def dex():
 dex()
 
 time.sleep(6)
-
-def dex():
