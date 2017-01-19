@@ -1,0 +1,31 @@
+{
+	"room": {
+		"GalaxyMap": {
+			"description": "Captain, this is the galaxy map captain,unfortunately this is locked off due to the emergency.Step back from the pedestal by typing B"
+		},
+		"BridgeHallway": {
+			"description": "Captain, this is the hallway to the airlock, to go forward type F otherwise return to CIC with B"
+		},
+		"PortAirlock": {
+			"description": "Captain, you cannot enter without a spacesuit, return to Bridge Hallway by typing B"
+		},
+		"SouthAirlock": {
+			"description": "Captain, you cannot enter without a spacesuit, return to Bridge Hallway by typing B"
+		},
+		"Bridge": {
+			"description": "Captain, we have lost power to the bridge, we cannot steer unless you restore power, return to Bridge Hallway by typing B"
+		},
+		"Lift": {
+			"description": "Captain, this is the lift, and its working, choose a floor by typing in the floor you want to go to 1-5, type 3 to go back to CIC"
+		},
+		"Techlab": {
+			"description": "Captain, this is the tech lab, theres an emergency ladder to deck 3, type S to down the ladder, type E to go to FTL hallway, type B to go back to CIC"
+		},
+		"FTLHallway": {
+			"description": "Captain, this is the hallway connecting the comms, armory, and tech lab. Type FTL for FTl comms, type Arm for armory or type Tech to return to the tech lab"
+		},
+		"Armory": {
+			"description": "Captain, This is the armory where we store weapons, if you want a weapon, head to the locker otherwise leave. Type Locker to headto the locker, else head to the cic by typing cic for head to the hallway by typing e"
+		}
+	}
+}

@@ -4,26 +4,34 @@ This project is officially created by John O'Sullivan and Jack Downie-webb
 Assistant creators joining after initial collaboration are Zander Brown and Destiny Abagonisaede
 """
 
-import sys, time
+from time import sleep
+from json import load as load_json
 
+def get_string():
+    with open('strings.json') as f:
+        try:
+            return load_json(f)
+        except ValueError:
+            print ('Failed to load strings!')
+            
 #begin program
 
 #introduction to program
 print("Welcome to the Mass Effect Experience")
 
-time.sleep(3)
+sleep(3)
 
 print("Along this game you will experience a fan-made story")
 
-time.sleep(3)
+sleep(3)
 
 print("Within this game you will be partaking in the escape")
 
-time.sleep(3)
+sleep(3)
 
 print("Of the S.S.V Normandy SR2.")
 
-time.sleep(3)
+sleep(3)
 
 print("First sir, we need your name and age")
 
@@ -34,7 +42,7 @@ age = int(input("Please input your age Captain:"))
 print("Welcome to the Normandy Captain",name)
 
 #introduction to simulation
-time.sleep(3)
+sleep(3)
 
 room_CIC_description = """
 
@@ -47,7 +55,7 @@ certain features of the ship are locked off and others are available.
 
 """
 
-time.sleep(2)
+sleep(2)
 
 #description
 
@@ -68,7 +76,7 @@ print(room_CIC_description)
 print("Captain, where would you like to go?")
 print("Your in the CIC , type in what you wish to choose from the list below?")
 
-time.sleep(4)
+sleep(4)
 
 def dex():
     print(room_CIC_description)
