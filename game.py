@@ -10,16 +10,18 @@ Zander Brown and Destiny Abagonisaede
 from time import sleep
 from json import load as load_json
 
+
 def get_string():
     with open('strings.json') as f:
         try:
             return load_json(f)
         except ValueError:
             print ('Failed to load strings!')
-            
-#begin program
 
-#introduction to program
+
+# begin program
+
+# introduction to program
 
 for msg in get_string()['start']['scrolling']:
     print(msg)
@@ -31,12 +33,12 @@ name = str(input("Please enter your name into the registry: "))
 
 age = int(input("Please input your age Captain:"))
 
-print("Welcome to the Normandy Captain",name)
+print("Welcome to the Normandy Captain", name)
 
-#introduction to simulation
+# introduction to simulation
 sleep(3)
 
-#description
+# description
 
 pack = ["nothing so far"]
 
@@ -48,6 +50,7 @@ print("Captain, where would you like to go?")
 print(get_string()['general']['yourin'].format(room='CIC'))
 
 sleep(4)
+
 
 def dex():
     print('\n'.join(get_string()['room']['CIC']['description']))
