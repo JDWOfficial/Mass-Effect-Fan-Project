@@ -20,7 +20,7 @@ install:
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then bash package/install_osx.sh; fi
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then bash package/install_linux.sh; fi
 
-  pip install pep8
+  - pip install pep8
 
   # Check everything was correctly installed
   - echo $PATH
@@ -36,7 +36,7 @@ script:
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then make check; fi
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then make clean; fi
 
-  pep8 game.py
+  - pep8 game.py
   
 notifications:
   email:
