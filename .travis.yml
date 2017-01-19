@@ -1,0 +1,44 @@
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+      language: generic
+
+      sudo: required
+      language: generic
+
+before_install:
+  # OS and default Python info
+  - uname -a
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then sw_vers; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then python3 -c "import sys; print(sys.executable)"; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo python3 -c "import sys; print(sys.executable)"; fi
+
+install:
+  # Python 3 and pip 3 installation are OS dependent
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then bash package/install_osx.sh; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then bash package/install_linux.sh; fi
+
+  pip install pep8
+
+  # Check everything was correctly installed
+  - echo $PATH
+  - python3 --version
+  - python3 -c "import struct; print(struct.calcsize('P') * 8)"
+  - python3 -c "import sys; print(sys.executable)"
+  - pip3 --version
+  - sudo pip3 --version
+  - pip3 freeze
+
+script:
+  # Run the tests, at the moment there is a segmentation fault on Linux, this will go away with Py3.5
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then make check; fi
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then make clean; fi
+
+  pep8 game.py
+  
+notifications:
+  email:
+    on_success: change
+    on_failure: change
