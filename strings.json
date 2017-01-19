@@ -1,4 +1,15 @@
 {
+	"general": {
+		"yourin": "Your in the {room} , type in what you wish to choose from the list below?"
+	},
+	"start": {
+		"scrolling": [
+			"Welcome to the Mass Effect Experience",
+			"Along this game you will experience a fan-made story",
+			"Within this game you will be partaking in the escape",
+			"Of the S.S.V Normandy SR2."
+		]
+	},
 	"room": {
 		"GalaxyMap": {
 			"description": "Captain, this is the galaxy map captain,unfortunately this is locked off due to the emergency.Step back from the pedestal by typing B"
@@ -25,7 +36,18 @@
 			"description": "Captain, this is the hallway connecting the comms, armory, and tech lab. Type FTL for FTl comms, type Arm for armory or type Tech to return to the tech lab"
 		},
 		"Armory": {
-			"description": "Captain, This is the armory where we store weapons, if you want a weapon, head to the locker otherwise leave. Type Locker to headto the locker, else head to the cic by typing cic for head to the hallway by typing e"
+			"description": "Captain, This is the armory where we store weapons, if you want a weapon, head to the locker otherwise leave. Type Locker to headto the locker, else head to the cic by typing cic for head to the hallway by typing e",
+			"enter": "Hello captain,you have two options to go, you can look around the armoury, you can head into the hallway or you can head back to the CIC."
+		},
+		"CIC": {
+			"description": [
+				"Welcome to the CIC, captain. This is the command intelligence centre aboard the",
+				"S.S.V Normandy SR2. Within this simulation, you will experience the abandon ship",
+				"protocols put in place to protect you and the crew sir.",
+				"",
+				"To escape, please traverse the ship to escape in this scenario where",
+				"certain features of the ship are locked off and others are available."
+			]
 		}
 	}
 }
