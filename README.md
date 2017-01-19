@@ -6,3 +6,5 @@ Game for entry to BAFTA Game Awards by:
 * Jack Downie-webb
 * Zander Brown
 * Destiny Abagonisaede
+
+[The Game Plan](plan.md)
