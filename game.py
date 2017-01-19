@@ -16,7 +16,7 @@ def get_string():
         try:
             return load_json(f)
         except ValueError:
-            print ('Failed to load strings!')
+            print('Failed to load strings!')
 
 
 # begin program
