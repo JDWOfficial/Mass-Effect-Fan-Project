@@ -9,7 +9,7 @@ import time
 #begin program
 
 #introduction to program
-print("Welcome to~0965 the Mass Effect Experience")
+print("Welcome to the Mass Effect Experience")
 
 time.sleep(3)
 
@@ -25,7 +25,7 @@ print("Of the S.S.V Normandy SR2.")
 
 time.sleep(3)
 
-print("Firs=t sir, we need your name and age")
+print("First sir, we need your name and age")
 
 name = str(input("Please enter your name into the registry: "))
 
@@ -66,7 +66,7 @@ pack = ["nothing so far"]
 print(room_CIC_description)
 
 print("Captain, where would you like to go?")
-print("Your in the CIC , type in what you wish to choose from the list below?]pp")
+print("Your in the CIC , type in what you wish to choose from the list below?")
 
 time.sleep(4)
 
@@ -80,8 +80,6 @@ def dex():
     Techlab = True
     if decisiona.lower() == "armory":
         print(room_Armory_description)
-        time.sleep(1)
+        time.sleep(3)
         print("Hello captain,you have two options to go, you can look around the armoury, you can head into the hallway or you can head back to the CIC.")
 dex()
-
-time.sleep(6)
