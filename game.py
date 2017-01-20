@@ -1,5 +1,5 @@
 """
-(C) Copyright 2017 TAA BAFTA Game Project
+2017 Mass Effect Fan Project
 
 This file is copyrighted property of the TAA Year 10 YGD_Bafta Project for
 making. This project is officially created by John O'Sullivan and
