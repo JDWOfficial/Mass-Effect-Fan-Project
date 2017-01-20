@@ -21,6 +21,8 @@ def get_string():
 
 # begin program
 
+# hi.
+
 # introduction to program
 
 for msg in get_string()['start']['scrolling']:
