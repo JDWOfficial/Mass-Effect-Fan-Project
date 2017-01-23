@@ -63,11 +63,11 @@ Stimulation Packet (Stim Pack), MediGel, OmniGel, Fire Extinguisher, Food, Liqui
 Check First Officers Computer,
 Read Emails
 Pry Escape pod with crowbar
-Use keycard on escape pod
+Use pashphrase on escape pod
 Force open escape pod
 Use KeyCode on escape Pod.
 Pick up oxygen tank
-
+Use Omnigel on escape pod
 
 
 #Room title – Deck 4 – Engineers deck
@@ -83,15 +83,13 @@ Oh no!
  Through the right door, you see the corpse of an Engineer! 
 You can choose to search his body for any potential information.
 If you choose to continue forward into the engine core, you may try and override the engine core terminal, to try and slow down the ships crash course, and increase the time on the timer.
-Item(s) – Escape  
-
-
-
+##Item(s) –
+Passphrase on paper
+Fire Extingusher
+OmniGel
 ##Special commands needed – 
-
-
-
-
+Search Engineers Corpse
+Take <insert item name here>
 
 
 
