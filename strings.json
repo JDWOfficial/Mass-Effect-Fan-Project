@@ -12,19 +12,58 @@
 	},
 	"room": {
 		"GalaxyMap": {
-			"description": "Captain, this is the galaxy map captain,unfortunately this is locked off due to the emergency.Step back from the pedestal by typing B"
+			"description": "Sir this is no time to be staring at navigation!, ESCAPE!"
 		},
 		"BridgeHallway": {
 			"description": "Captain, this is the hallway to the airlock, to go forward type F otherwise return to CIC with B"
 		},
-		"PortAirlock": {
-			"description": "Captain, you cannot enter without a spacesuit, return to Bridge Hallway by typing B"
+		"Captains Cabin": {
+			"description": "Captain, this is your private cabin, THERE IS LITERALLY NOTHING TO DO HERE, YOUR WASTING TIME."
 		},
+		"PortAirlock": {
+			"description": "Captain, you cannot enter without a spacesuit, return to Bridge Hallway by typing B" 
+			
+		},
+		"Medical Bay": {
+			"description": "Captain, this is the medical bay, lets not interupt dr.Chakwas whos stabilizing the wounded. At the back of the medical bay there is a group of items, you can take. If you want to leave, simply press B to back out to the crew deck."
+			"enterbay":"The tray has a section of utensils aswell as a few medigels. Here, take one."
+		},
+		"Port cargo": {
+			"description": "The port cargo has been ejected, forget it!"
+		}, 
+		"starboard cargo": {
+			"description": "The port cargo has been ejected, forget it!"
+		}, 
+		"Port engine walkway": {
+			"description": "The port engine walkway leads to the main engine core, press b to go back to the engine hallway or press N to go "
+		},
+		"Starboard engine walkway": {
+			"description": "The starboard engine walkway leads to the main engine core, press b to go back to the engine hallway or press N to go "
+		}, 
+		"Starboard walkway": {
+			"description": "The starboard walkway in the crew deck, leads to the medbay or back to the mess hall. W for medbay, N for medbay, S for crew hallway"
+		}, 
+		"Life support": {
+			"description": "This is life support, nothing necessarily important belongs in here since it was hit. "
+		}, 
 		"SouthAirlock": {
 			"description": "Captain, you cannot enter without a spacesuit, return to Bridge Hallway by typing B"
 		},
+
 		"Bridge": {
 			"description": "Captain, we have lost power to the bridge, we cannot steer unless you restore power, return to Bridge Hallway by typing B"
+		},
+		"Cabin Toilet": {
+			"description": "We shouldn't be casually using the toilet in the crash!"
+		},
+		"Mess hall"
+			"description":"Captain, this is the mess hall. Press W to go to the first officers office, NW to go to the kitchen, N to go to the main battery, E to go to the med bay, S to go to the lift or HALL to go to the crew hall."
+		},
+		"Main battery": {
+			"description": "The port observation deck was hit, we can't save them!"
+		},
+		"First Officers office": {
+			"description": "This is the first officers office, there is a terminal on your right, would you like to access it? N to use terminal, B to head back to mess hall. "
 		},
 		"Lift": {
 			"description": "Captain, this is the lift, and its working, choose a floor by typing in the floor you want to go to 1-5, type 3 to go back to CIC"
@@ -32,6 +71,13 @@
 		"Techlab": {
 			"description": "Captain, this is the tech lab, theres an emergency ladder to deck 3, type S to down the ladder, type E to go to FTL hallway, type B to go back to CIC"
 		},
+		"FTLComms": {
+			"description": "The antenna for the FTL comms was ripped straight off in the collision, it serves no purpose"
+		},
+		"Escape pods": {
+			"description": "These are the escape pods, get the keycard or the crowbar to use them."
+		},
+
 		"FTLHallway": {
 			"description": "Captain, this is the hallway connecting the comms, armory, and tech lab. Type FTL for FTl comms, type Arm for armory or type Tech to return to the tech lab"
 		},
