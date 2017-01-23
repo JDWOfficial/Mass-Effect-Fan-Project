@@ -72,7 +72,8 @@ Pick up oxygen tank
 
 #Room title – Deck 4 – Engineers deck
 
-##Room Description(s) – As you leave the elevator, you are greeted with a wall, and a path – similar to the previous deck. 
+##Room Description(s) – 
+As you leave the elevator, you are greeted with a wall, and a path – similar to the previous deck. 
 Except, this time the doors are on either side of the elevator. The doors both lead to the same room. 
 On either end of the path, are port and starboard cargo decks. The cargo, however, has been released out of the airlock as part of the emergency escape protocol, 
 So looking in there isn’t necessary.
