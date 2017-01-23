@@ -1,6 +1,7 @@
 #Room title – Deck 2, CIC
 
-##Room Description(s) – This floor is very large. From where you start, to your south there is the bridge walkway, leading to the bridge.
+##Room Description(s) – 
+This floor is very large. From where you start, to your south there is the bridge walkway, leading to the bridge.
  In front of you, you can see the galaxy map, and slight left of that we have the tech lab, slightly to the right of the galaxy map you see the armoury.
  Directly in front of the galaxy map, is the elevator.
 ] There are various items scattered around this floor that you will need to explore to find.
