@@ -2,11 +2,13 @@ from tkinter.ttk import Button, Frame, Label
 from tkinter import Listbox, END, ACTIVE, X
 
 class ChoiceFrame (Frame):
-    def __init__ (self, title):
+    def __init__ (self, title, parent=None):
         Frame.__init__(self)
         self.master.title(title)
         self.master.resizable(0,0)
         self.master.attributes("-toolwindow",1)
+        if parent:
+            self.transient(parent)
         lbl = Label(self, text=title)
         lbl.pack()
         self.listbox = Listbox(self)
@@ -15,7 +17,7 @@ class ChoiceFrame (Frame):
 
 
 
-def make_choice (options, title, btnlbl='Choose'):
+def make_choice (options, title, btnlbl='Choose', parent=None):
     win = ChoiceFrame(title)
     for option in options:
         win.listbox.insert(END, option)

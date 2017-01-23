@@ -8,34 +8,35 @@ Zander Brown and Destiny Abagonisaede
 """
 
 from time import sleep
-from json import load as load_json
-from picker import make_choice
+from shipmap import Map
+from util import get_str
 
-def get_string():
-    with open('strings.json') as f:
-        try:
-            return load_json(f)
-        except ValueError:
-            print('Failed to load strings!')
+
 
 # begin program
 
 # introduction to program
 
-for msg in get_string()['start']['scrolling']:
+for msg in get_str()['start']['scrolling']:
     print(msg)
-    sleep(3)
+    #sleep(3)
+
+game = Map(0)
+game.pack()
 
 print("First sir, we need your name and age")
 
-name = str(input("Please enter your name into the registry: "))
+#name = str(input("Please enter your name into the registry: "))
+name = game.ask_string('Please enter your name into the registry:', 'Name')
 
-age = int(input("Please input your age Captain:"))
+#age = int(input("Please input your age Captain:"))
+age = game.ask_integer('Please input your age Captain:', 'Age')
+
 
 print("Welcome to the Normandy Captain", name)
 
 # introduction to simulation
-sleep(3)
+#sleep(3)
 
 # description
 
@@ -44,24 +45,22 @@ pack = ["nothing so far"]
 # Because strings are stored in JSON and JSON doesn't support multiline
 # strings each line is sored as a list element. This sticks them back
 # together joining them with the newline chareter
-print('\n'.join(get_string()['room']['CIC']['description']))
+print('\n'.join(get_str()['room']['CIC']['description']))
 print("Captain, where would you like to go?")
-print(get_string()['general']['yourin'].format(room='CIC'))
+print(get_str()['general']['yourin'].format(room='CIC'))
 
 sleep(4)
 
-
 def dex():
-    print('\n'.join(get_string()['room']['CIC']['description']))
-
-    decisiona = make_choice(['Galaxy Map', 'Bridge Hallway', 'Elevator', 'Techlab', 'Armory'], 'Where To?')
+    print('\n'.join(get_str()['room']['CIC']['description']))
+    decisiona = game.ask_multiple(get_str()['room']['CIC']['goto'], 'Where To?')
     Armory = True
     Elevator = True
     GalaxyMap = True
     BridgeHallway = True
     Techlab = True
     if decisiona.lower() == "armory":
-        print(get_string()['room']['Armory']['description'])
+        print(get_str()['room']['Armory']['description'])
         sleep(3)
-        print(get_string()['room']['Armory']['enter'])
+        print(get_str()['room']['Armory']['enter'])
 dex()

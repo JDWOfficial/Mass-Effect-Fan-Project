@@ -1,6 +1,7 @@
 {
 	"general": {
-		"yourin": "Your in the {room} , type in what you wish to choose from the list below?"
+		"yourin": "Your in the {room} , type in what you wish to choose from the list below?",
+		"wintitle": "Mass Effect - Deck {{deck}} - {{room}}"
 	},
 	"start": {
 		"scrolling": [
@@ -47,7 +48,8 @@
 				"",
 				"To escape, please traverse the ship to escape in this scenario where",
 				"certain features of the ship are locked off and others are available."
-			]
+			],
+			"goto": ["Galaxy Map", "Bridge Hallway", "Elevator", "Techlab", "Armory"]
 		}
 	}
 }
