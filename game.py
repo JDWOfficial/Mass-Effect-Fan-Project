@@ -9,7 +9,7 @@ Zander Brown and Destiny Abagonisaede
 
 from time import sleep
 from json import load as load_json
-
+from picker import make_choice
 
 def get_string():
     with open('strings.json') as f:
@@ -17,7 +17,6 @@ def get_string():
             return load_json(f)
         except ValueError:
             print('Failed to load strings!')
-
 
 # begin program
 
@@ -54,7 +53,8 @@ sleep(4)
 
 def dex():
     print('\n'.join(get_string()['room']['CIC']['description']))
-    decisiona = str(input("GalaxyMap,BridgeHallway,Elevator,Techlab,armory"))
+
+    decisiona = make_choice(['Galaxy Map', 'Bridge Hallway', 'Elevator', 'Techlab', 'Armory'], 'Where To?')
     Armory = True
     Elevator = True
     GalaxyMap = True
