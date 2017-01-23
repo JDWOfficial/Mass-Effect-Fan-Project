@@ -1,34 +1,37 @@
-from tkinter.ttk import Button, Frame, Label
-from tkinter import Listbox, END, ACTIVE, X
+from tkinter.ttk import Button, Label
+from tkinter import Toplevel, Listbox, END, ACTIVE, X
 
-class ChoiceFrame (Frame):
+
+class ChoiceFrame (Toplevel):
     def __init__ (self, title, parent=None):
-        Frame.__init__(self)
-        self.master.title(title)
-        self.master.resizable(0,0)
-        self.master.attributes("-toolwindow",1)
+        Toplevel.__init__(self)
+        self.title(title)
+        self.resizable(0,0)
+        self.attributes("-toolwindow",1)
         if parent:
+            print('Hi')
             self.transient(parent)
         lbl = Label(self, text=title)
         lbl.pack()
         self.listbox = Listbox(self)
         self.listbox.pack()
+        self.listbox.focus_set()
         self.selection = None
 
 
 
 def make_choice (options, title, btnlbl='Choose', parent=None):
-    win = ChoiceFrame(title)
+    win = ChoiceFrame(title, parent)
     for option in options:
         win.listbox.insert(END, option)
 
     def callback ():
         win.selection = win.listbox.get(ACTIVE)
-        win.master.destroy()
+        win.destroy()
     
     btn = Button(win, text=btnlbl, command=callback)
     btn.pack(fill=X)
-    win.pack()
+    #win.pack()
 
     win.mainloop()
 
