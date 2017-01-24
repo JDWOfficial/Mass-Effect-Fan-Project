@@ -1,7 +1,7 @@
 """
 2017 Mass Effect Fan Project
 
-This file is copyrighted property of the TAA Year 10 YGD_Bafta Project for
+This file is copyrighted property of the TAA Year 10 IT Project for
 making. This project is officially created by John O'Sullivan and
 Jack Downie-Webb assistant creators joining after initial collaboration are
 Zander Brown and Destiny Abagonisaede
