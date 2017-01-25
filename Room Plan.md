@@ -90,31 +90,3 @@ OmniGel
 ##Special commands needed – 
 Search Engineers Corpse
 Take <insert item name here>
-
-
-
-#Room title – 
-
-##Room Description(s) – 
-
-
-
-
-
-
-
-
-
-
-Item(s) – 
-
-
-
-Special commands needed – 
-
-
-
-
-
-
-
