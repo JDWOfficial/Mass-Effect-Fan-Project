@@ -89,4 +89,4 @@ Fire Extingusher
 OmniGel
 ##Special commands needed – 
 Search Engineers Corpse
-Take <insert item name here>
+Take [insert item name here]
